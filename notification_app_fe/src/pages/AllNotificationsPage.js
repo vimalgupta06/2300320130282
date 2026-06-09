@@ -19,7 +19,7 @@ const ACCESS_TOKEN = process.env.REACT_APP_ACCESS_TOKEN;
 export default function AllNotificationsPage() {
   const [notifications, setNotifications] = useState([]);
   const [notificationType, setNotificationType] = useState("");
-  const [limit, setLimit] = useState(20);
+  const [limit, setLimit] = useState(10);
   const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");

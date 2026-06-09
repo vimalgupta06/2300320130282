@@ -35,7 +35,7 @@ export default function PriorityPage() {
         ACCESS_TOKEN
       );
 
-      const data = await fetchNotifications(1, 100);
+      const data = await fetchNotifications(1, 10);
       const priorityData = getPriorityNotifications(data, topN);
 
       setNotifications(priorityData);
